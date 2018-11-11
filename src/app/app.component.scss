@@ -1,0 +1,55 @@
+.todo {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 5rem;
+  text-align: center;
+  color: #3c3737;
+
+  &__add {
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    outline: none;
+  }
+
+  &__button {
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+    color: #3c3737;
+    background: #e2eaea;
+    cursor: pointer;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1.5rem;
+    min-height: 1.5rem;
+    align-items: center;
+    margin: 1.5rem 0;
+    background: #f5f4f4;
+    border-radius: 0.25rem;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  &__todo-name {
+    padding: 1rem;
+  }
+
+  &__delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    background: #c14343;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,15 @@
+<div class="todo">
+  <div class="todo__add">
+    <h2>Todo лист</h2>
+    <input class="todo__text" #todo type="text" placeholder="Название задачи">
+    <input class="todo__button" type="button" value="Добавить задачу" (click)='addTodo(todo.value)'>
+  </div>
+  <div class="todo__list">
+    <h2>Список задач</h2>
+    <div class="todo__item" *ngFor="let todo of todoList; index as i">
+      <span class="todo__todo-name">{{ todo.name }}</span>
+      <span class="todo__delete" (click)="removeTodo(todo._id)">x</span>
+    </div>
+  </div>
+</div>
+
